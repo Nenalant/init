@@ -1,0 +1,14 @@
+#!/bin/bash
+
+whofile=$(whoami)
+if [ "$whofile" != "root" ]
+then
+        exit 1
+fi
+echo -n "user : "
+read user
+userdel -f $user
+if [ 0 = $? ]
+then
+        echo "User $user deleted"
+fi

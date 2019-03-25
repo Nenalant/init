@@ -1,0 +1,7 @@
+Changer la nom dans :
+sh -c "newname > /etc/hostname"
+
+Pour que cela fonctionne correctement
+et que le nom soit associer a mon adress IP
+il faut egalement le changer dans  :
+/etc/hosts

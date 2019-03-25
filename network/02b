@@ -1,0 +1,7 @@
+for (( i=0 ; i<=255; i++ ))
+do
+	for ((y=0 ; y<=255 ; y++))
+	do 
+   		echo '10.12.'$i'.'$y
+	done
+done

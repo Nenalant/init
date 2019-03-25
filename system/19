@@ -1,0 +1,26 @@
+minissdpd on
+procps on
+keyboard-setup.sh on
+network-manager on
+udev on
+gdm3 on
+console-setup.sh on
+speech-dispatcher on
+cron on
+anacron on
+saned on
+ssh on
+cups-browsed on
+avahi-daemon on
+alsa-utils on
+pppd-dns on
+bluetooth on
+unattended-upgrades on
+kmod on
+cups on
+rsyslog on
+x11-common on
+dbus on
+sudo off
+
+rcconf is a Debian Runlevel configuration tool
