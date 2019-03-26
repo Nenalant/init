@@ -1,0 +1,14 @@
+#!/bin/bash
+
+file="/etc/ssh/sshd_config"
+
+while true; do
+    read -p "Do you want to get rights to log as root ? [y/n] " yn
+    case $yn in
+        [Yy]* ) sed -r --in-place 's/\#PermitRootLogin prohibit-password/PermitRootLogin yes/g' $file;
+                sed -r --in-place 's/\#PasswordAuthentication yes/PasswordAuthentication yes/g' $file;
+                echo -e "File : $file has been modified.\nCongratulations ! You now have rights ! Enjoy !"; exit;;
+        [Nn]* ) exit;;
+        *) echo "Please answer y or n.";;
+    esac
+done
