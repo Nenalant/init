@@ -1,0 +1,11 @@
+ifconfig en0 | grep broadcast | cut -d " " -f5 -f6
+
+ipcalc 10.12.2.19/16
+
+for (( i=0 ; i<=255; i++ ))
+do
+	for ((y=1 ; y<255 ; y++))
+	do 
+   		echo '10.12.'$i'.'$y
+	done
+done

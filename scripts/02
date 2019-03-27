@@ -3,6 +3,7 @@
 whofile=$(whoami)
 if [ "$whofile" != "root" ]
 then
+        echo "You must be root"
         exit 1
 fi
 echo -n "user : "

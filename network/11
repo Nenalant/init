@@ -1,0 +1,3 @@
+Avec la commande : traceroute slash16.org
+on voit que nat-1 (10.60.1.11) est notre Internet Service Provider,
+c'est l'intermediaire entre nous (premiere ligne) et l'exterieur (les lignes suivantes).
