@@ -1,1 +1,1 @@
-exit
+service ssh stop

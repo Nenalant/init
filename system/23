@@ -2,4 +2,4 @@ Se connecter en tant que nouvel utilisateur
 en session ssh :
 ssh [nouvel utilisateur]@127.0.0.1 -p 1111
 en session graphique :
-ssh -X -Y toto@127.0.0.1 -p 1111 (pour tester[firefox]) (dans Xquartz)
+ssh -X -Y [nouvel utilisateur]@127.0.0.1 -p 1111 (pour tester[firefox]) (dans Xquartz)
